@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "Both username and password are required.";
 } else {
     // Open or create the text file for appending
-    $file = fopen("users.txt", "a");
+    $file = fopen("users.txt", "w+");
 
     if ($file) {
         // Write username and password to the file
